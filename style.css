@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#ffffff;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('geometric-Blue-Wallpaper-Free-Download.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.calculator {
+ 
+  border: 3px double #ffffff;
+  padding: 7px;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.4); /* Slightly darker to contrast background */
+  box-shadow: 0px 3px 20px rgba(255, 255, 255, 0.1); /* Light glow */
+}
+
+/* All number buttons */
+.button:not(.operator):not(.equalBtn) {
+  border: 2px solid #ffffff;  /* Solid white border */
+  border-radius: 50%;         /* Keep the round shape */
+}
+.button {
+  border: 2px solid #ffffff;  /* White solid border */
+  border-radius: 50%;         /* Rounded buttons */
+}
+
+
+button:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.2s ease-in-out;
+}
+
+input{
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+input::placeholder{
+    color: #ffffff;
+}
+
+button{
+    border:#ffffff;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 60%;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.equalBtn{
+    background-color: #fb7c14;
+
+}
+
+.operator{
+    color: #6dee0a;
+}
+.footer {
+  position:absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: #ffffffb0;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 1px 1px 5px rgba(0, 255, 255, 0.2);
+  animation: fadeIn 2s ease-in-out;
+}
